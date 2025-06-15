@@ -43,7 +43,7 @@ class BgroundImg extends StatelessWidget {
           Positioned(
             top: 60,
             left: 120,
-            child: Container(
+            child: SizedBox(
               width: 420,
               height: 420,
               child: Transform.rotate(
