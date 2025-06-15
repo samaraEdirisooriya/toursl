@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toursl/ui/img/img.dart';
 
 class BgroundImg extends StatelessWidget {
   const BgroundImg({super.key});
@@ -8,7 +9,7 @@ class BgroundImg extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/images/bground.png'),
+          image: AssetImage(AppAssets.background), // Replace with your image path
           fit: BoxFit.cover,
         ),
       ),
