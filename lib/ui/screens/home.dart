@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toursl/ui/colors/colors.dart';
+import 'package:toursl/ui/layouts/mapui.dart';
 import 'package:toursl/ui/widgets/bground_img.dart';
 import 'package:toursl/ui/widgets/heddingtext.dart';
 
@@ -17,6 +18,7 @@ class _HomeState extends State<Home> {
       body: Stack(
         children: [
           BgroundImg(),
+         
           SingleChildScrollView(
             child: Column(
               children: [
@@ -24,6 +26,7 @@ class _HomeState extends State<Home> {
                   padding: const EdgeInsets.only(top: 80, left: 20),
                   child: HeadingText(),
                 ),
+                Mapui(),
               ],
             ),
           ),

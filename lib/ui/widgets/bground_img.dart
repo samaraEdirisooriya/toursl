@@ -10,17 +10,19 @@ class BgroundImg extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(AppAssets.background), // Replace with your image path
+          image: AssetImage(
+            AppAssets.background,
+          ), 
           fit: BoxFit.cover,
         ),
       ),
       child: Stack(
         children: [
-          // Gradient overlay at the top
+
           Align(
             alignment: Alignment.topCenter,
             child: SizedBox(
-              height: double.infinity, // Adjust height as needed
+              height: double.infinity, 
               width: double.infinity,
               child: Container(
                 decoration: const BoxDecoration(
@@ -28,15 +30,32 @@ class BgroundImg extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      AppColors.backgroundGradientTop, // Top color (semi-transparent black)
-                      AppColors.backgroundGradientBottom, // Bottom color (fully transparent)
+                      AppColors
+                          .backgroundGradientTop, 
+                      AppColors
+                          .backgroundGradientBottom, 
                     ],
                   ),
                 ),
               ),
             ),
           ),
-          // Add any additional widgets here if needed
+          Positioned(
+            top: 60,
+            left: 120,
+            child: Container(
+              width: 420,
+              height: 420,
+              child: Transform.rotate(
+                angle: 1.9708, // 90 degrees in radians
+                child: Image.asset(
+                  'assets/line.png',
+                  width: 120,
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );

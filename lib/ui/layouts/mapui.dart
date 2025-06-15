@@ -10,6 +10,14 @@ class Mapui extends StatefulWidget {
 class _MapuiState extends State<Mapui> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container(
+      alignment: Alignment.center,
+      child: Image.asset(
+        'assets/sriLankaHigh.svg',
+        width: 300, // Adjust as needed
+        height: 400, // Adjust as needed
+        fit: BoxFit.contain,
+      ),
+    );
   }
 }
