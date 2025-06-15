@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toursl/ui/colors/colors.dart';
 import 'package:toursl/ui/img/img.dart';
 
 class BgroundImg extends StatelessWidget {
@@ -19,7 +20,7 @@ class BgroundImg extends StatelessWidget {
           Align(
             alignment: Alignment.topCenter,
             child: SizedBox(
-              height: 200, // Adjust height as needed
+              height: double.infinity, // Adjust height as needed
               width: double.infinity,
               child: Container(
                 decoration: const BoxDecoration(
@@ -27,8 +28,8 @@ class BgroundImg extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black54, // Top color (semi-transparent black)
-                      Colors.transparent, // Bottom color (fully transparent)
+                      AppColors.backgroundGradientTop, // Top color (semi-transparent black)
+                      AppColors.backgroundGradientBottom, // Bottom color (fully transparent)
                     ],
                   ),
                 ),
