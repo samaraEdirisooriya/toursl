@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:toursl/ui/layouts/mapui.dart';
 import 'package:toursl/ui/widgets/bground_img.dart';
 import 'package:toursl/ui/widgets/heddingtext.dart';
+import 'package:toursl/ui/widgets/homelist.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -14,6 +15,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       body: Stack(
         alignment: Alignment.topLeft,
         children: [
@@ -29,11 +31,15 @@ class _HomeState extends State<Home> {
                   padding: const EdgeInsets.only(top: 80, left: 20),
                   child: HeadingText(),
                 ),
-                Container(
-                  height: 400,
-                  width: 400,
-                  child: DistrictMapPage(),
+                Padding(
+                  padding: const EdgeInsets.only(left: 20.0),
+                  child: SizedBox(
+                    width: 250,
+                    height:450,
+                    child: const SriLankaDistrictMap(),
+                  ),
                 ),
+                HomeList()
               ],
             ),
           ),

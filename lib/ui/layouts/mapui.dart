@@ -1,16 +1,21 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter/services.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 
-class DistrictMapPage extends StatefulWidget {
+
+
+class SriLankaDistrictMap extends StatefulWidget {
+  const SriLankaDistrictMap({super.key});
+
   @override
-  _DistrictMapPageState createState() => _DistrictMapPageState();
+  State<SriLankaDistrictMap> createState() => _SriLankaDistrictMapState();
 }
 
-class _DistrictMapPageState extends State<DistrictMapPage> {
-  List<Polygon> districtPolygons = [];
+class _SriLankaDistrictMapState extends State<SriLankaDistrictMap> {
+  Map<String, List<List<LatLng>>> districtCoords = {};
+  String? selectedDistrict;
 
   @override
   void initState() {
@@ -19,64 +24,112 @@ class _DistrictMapPageState extends State<DistrictMapPage> {
   }
 
   Future<void> loadGeoJson() async {
-    final String data = await rootBundle.loadString('assets/gadm41_LKA_1.json');
+    final data = await rootBundle.loadString('assets/gadm41_LKA_1.json');
     final geoJson = json.decode(data);
-    List features = geoJson['features'];
 
-    List<Polygon> polygons = [];
+    final features = geoJson['features'] as List;
 
     for (var feature in features) {
-      final String districtName = feature['properties']['NAME_1'];
-      final coordinates = feature['geometry']['coordinates'];
-      final geometryType = feature['geometry']['type'];
+      final name = feature['properties']['NAME_1'];
+      final geometry = feature['geometry'];
+      final type = geometry['type'];
+      final coords = geometry['coordinates'];
 
-      List polygonsData = [];
+      List<List<LatLng>> polygons = [];
 
-      if (geometryType == 'Polygon') {
-        polygonsData = [coordinates[0]];
-      } else if (geometryType == 'MultiPolygon') {
-        polygonsData = coordinates[0];
+      if (type == 'MultiPolygon') {
+        for (var poly in coords) {
+          final latlngs =
+              poly[0].map<LatLng>((c) => LatLng(c[1], c[0])).toList();
+          polygons.add(latlngs);
+        }
+      } else if (type == 'Polygon') {
+        final latlngs =
+            coords[0].map<LatLng>((c) => LatLng(c[1], c[0])).toList();
+        polygons.add(latlngs);
       }
 
-      for (var ring in polygonsData) {
-        List<LatLng> latlngList =
-            ring.map<LatLng>((point) {
-              return LatLng(point[1], point[0]);
-            }).toList();
-
-        polygons.add(
-          Polygon(
-            points: latlngList,
-            color:
-                districtName == "Colombo"
-                    ? Colors.white.withOpacity(0.8)
-                    : Colors.transparent,
-            borderStrokeWidth: 1.0,
-            borderColor: Colors.black,
-          ),
-        );
-      }
+      districtCoords[name] = polygons;
     }
 
-    setState(() {
-      districtPolygons = polygons;
-    });
+    setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
-    return FlutterMap(
-      options: MapOptions(
-        center: LatLng(7.8731, 80.7718), // Center of Sri Lanka
-        zoom: 7.0,
-      ),
+    final allPolygons =
+        districtCoords.entries.expand((entry) {
+          final isSelected = selectedDistrict == entry.key;
+          return entry.value.map(
+            (polyPart) => Polygon(
+              points: polyPart,
+              color:
+                  isSelected
+                      ? const Color.fromARGB(169, 244, 67, 54).withOpacity(0.9)
+                      : const Color.fromARGB(82, 255, 255, 255).withOpacity(0.3),
+              borderColor: const Color.fromARGB(255, 88, 88, 88),
+              borderStrokeWidth: 1,
+              isFilled: true,
+            ),
+          );
+        }).toList();
+
+    return Stack(
       children: [
-        TileLayer(
-          urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-          userAgentPackageName: 'com.example.toursl',
+        FlutterMap(
+          options: MapOptions(
+            center: LatLng(7.8731, 80.7718),
+            zoom: 7.2,
+            onTap: (_, latlng) {
+              String? tappedDistrict;
+              for (var entry in districtCoords.entries) {
+                for (var poly in entry.value) {
+                  if (_pointInPolygon(latlng, poly)) {
+                    tappedDistrict = entry.key;
+                    break;
+                  }
+                }
+                if (tappedDistrict != null) break;
+              }
+              setState(() {
+                selectedDistrict = tappedDistrict;
+              });
+            },
+          ),
+          children: [PolygonLayer(polygons: allPolygons)],
         ),
-        PolygonLayer(polygons: districtPolygons),
+        if (selectedDistrict != null)
+          Positioned(
+            bottom: 20,
+            left: 20,
+            child: Container(
+              padding: const EdgeInsets.all(8),
+              color: Colors.black87,
+              child: Text(
+                "Selected: $selectedDistrict",
+                style: const TextStyle(color: Colors.white),
+              ),
+            ),
+          ),
       ],
     );
+  }
+
+  // Ray-casting point-in-polygon algorithm
+  bool _pointInPolygon(LatLng point, List<LatLng> polygon) {
+    int intersectCount = 0;
+    for (int j = 0; j < polygon.length - 1; j++) {
+      LatLng a = polygon[j];
+      LatLng b = polygon[j + 1];
+      if (((a.latitude > point.latitude) != (b.latitude > point.latitude)) &&
+          (point.longitude <
+              (b.longitude - a.longitude) *
+                      (point.latitude - a.latitude) /
+                      (b.latitude - a.latitude) +
+                  a.longitude)) {
+        intersectCount++;
+      }
+    }
+    return (intersectCount % 2) == 1;
   }
 }
