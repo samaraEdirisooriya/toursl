@@ -79,7 +79,7 @@ class _SriLankaDistrictMapState extends State<SriLankaDistrictMap> {
         FlutterMap(
           options: MapOptions(
             center: LatLng(7.8731, 80.7718),
-            zoom: 7.2,
+            zoom: 5.2,
             onTap: (_, latlng) {
               String? tappedDistrict;
               for (var entry in districtCoords.entries) {
