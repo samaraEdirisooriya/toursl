@@ -40,22 +40,7 @@ class BgroundImg extends StatelessWidget {
               ),
             ),
           ),
-          Positioned(
-            top: 60,
-            left: 120,
-            child: SizedBox(
-              width: 420,
-              height: 420,
-              child: Transform.rotate(
-                angle: 1.9708, // 90 degrees in radians
-                child: Image.asset(
-                  'assets/line.png',
-                  width: 120,
-                  fit: BoxFit.fill,
-                ),
-              ),
-            ),
-          ),
+          
         ],
       ),
     );

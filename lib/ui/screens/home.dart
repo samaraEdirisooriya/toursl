@@ -3,6 +3,7 @@ import 'package:toursl/ui/layouts/mapui.dart';
 import 'package:toursl/ui/widgets/bground_img.dart';
 import 'package:toursl/ui/widgets/heddingtext.dart';
 import 'package:toursl/ui/widgets/homelist.dart';
+import 'package:toursl/ui/widgets/selectdistrict.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -23,23 +24,32 @@ class _HomeState extends State<Home> {
          
           SingleChildScrollView(
             
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
+            child: Stack(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 80, left: 20),
-                  child: HeadingText(),
+                SizedBox(
+                  width: MediaQuery.of(context).size.width,
+                  
+                  height: 500,
+                  child: SelectedDistrictWidget()),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 80, left: 20),
+                      child: HeadingText(),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 10.0),
+                      child: Container(
+                        width: 200,
+                        height:400,
+                        child: const SriLankaDistrictMap(),
+                      ),
+                    ),
+                    HomeList()
+                  ],
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 20.0),
-                  child: SizedBox(
-                    width: 250,
-                    height:450,
-                    child: const SriLankaDistrictMap(),
-                  ),
-                ),
-                HomeList()
               ],
             ),
           ),
