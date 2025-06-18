@@ -31,7 +31,17 @@ class SelectedDistrictWidget extends StatelessWidget {
           BlocBuilder<MapBloc, MapState>(
         builder: (context, state) {
           if (state.selectedDistrict == null || state.districtCities.isEmpty) {
-            return const Center(child: Text("No district selected."));
+            return const Positioned(
+                top: 250,
+                right: 100,
+                child: Text(
+                'Select a district',
+                  style: const TextStyle(
+                    fontSize: 20,
+                    color: Color.fromARGB(255, 0, 0, 0),
+                    fontWeight: FontWeight.bold,
+                ),
+              ));
           }
 
           return Stack(
@@ -50,7 +60,7 @@ class SelectedDistrictWidget extends StatelessWidget {
                 child: Text(
                   state.selectedDistrict!,
                   style: const TextStyle(
-                    fontSize: 24,
+                    fontSize: 20,
                     color: Color.fromARGB(255, 0, 0, 0),
                     fontWeight: FontWeight.bold,
                 ),

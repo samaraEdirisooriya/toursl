@@ -2,247 +2,12 @@
   "SriLanka": {
     "districts": [
       {
-        "name": "Colombo",
-        "cities": [
-          {
-            "name": "Colombo City",
-            "description": "The bustling commercial capital with colonial architecture, seaside promenades, and vibrant nightlife.",
-            "url": "https://en.wikipedia.org/wiki/Colombo#/media/File:Colombo_skyline_2024.jpg"
-          },
-          {
-            "name": "Mount Lavinia",
-            "description": "A beachside suburb known for its golden sands and the iconic Mount Lavinia Hotel.",
-            "url": "https://en.wikipedia.org/wiki/Mount_Lavinia#/media/File:Beauty_of_the_kandy.jpg"
-          }
-        ]
-      },
-      {
-        "name": "Gampaha",
-        "cities": [
-          {
-            "name": "Negombo",
-            "description": "A coastal city famous for its lagoon, Dutch canal, and fishing industry.",
-            "url": "https://example.com/negombo"
-          },
-          {
-            "name": "Kelaniya",
-            "description": "Known for the historic Kelaniya Raja Maha Vihara Buddhist temple.",
-            "url": "https://example.com/kelaniya"
-          }
-        ]
-      },
-      {
-        "name": "Kalutara",
-        "cities": [
-          {
-            "name": "Kalutara Town",
-            "description": "A quiet coastal town with a beautiful stupa and scenic beach.",
-            "url": "https://example.com/kalutara"
-          },
-          {
-            "name": "Beruwala",
-            "description": "Famous for its beach resorts and the historic Ketchimalai Mosque.",
-            "url": "https://example.com/beruwala"
-          }
-        ]
-      },
-      {
-        "name": "Kandy",
-        "cities": [
-          {
-            "name": "Kandy City",
-            "description": "Cultural capital of Sri Lanka, home to the Temple of the Tooth Relic and scenic Kandy Lake.",
-            "url": "https://en.wikipedia.org/wiki/Kandy#/media/File:SL_Kandy_asv2020-01_img04_Queens_Hotel.jpg"
-          },
-          {
-            "name": "Peradeniya",
-            "description": "Renowned for its botanical gardens with diverse flora and royal history.",
-            "url": "https://en.wikipedia.org/wiki/Peradeniya#/media/File:Botanical_Garden_of_Peradeniya_01.jpg"
-          }
-        ]
-      },
-      {
-        "name": "Matale",
-        "cities": [
-          {
-            "name": "Matale Town",
-            "description": "Surrounded by spice gardens and ancient temples, including Aluvihare Rock Temple.",
-            "url": "https://en.wikipedia.org/wiki/Matale#/media/File:Matale_city_skyline.jpg"
-          },
-          {
-            "name": "Riverston",
-            "description": "A scenic hill area with cool climates and beautiful hiking trails.",
-            "url": "https://en.wikipedia.org/wiki/Matale#/media/File:Matale_city_skyline.jpg"
-          }
-        ]
-      },
-      {
-        "name": "Nuwara Eliya",
-        "cities": [
-          {
-            "name": "Nuwara Eliya",
-            "description": "The 'Little England' of Sri Lanka, known for tea plantations and colonial charm.",
-            "url": "https://example.com/nuwara-eliya"
-          },
-          {
-            "name": "Horton Plains",
-            "description": "A national park with the iconic World's End cliff and rare wildlife.",
-            "url": "https://example.com/horton-plains"
-          }
-        ]
-      },
-      {
-        "name": "Galle",
-        "cities": [
-          {
-            "name": "Galle Fort",
-            "description": "A UNESCO World Heritage Site with Dutch colonial architecture and seaside views.",
-            "url": "https://example.com/galle-fort"
-          },
-          {
-            "name": "Unawatuna",
-            "description": "Popular beach town with snorkeling, coral reefs, and beachside cafes.",
-            "url": "https://example.com/unawatuna"
-          }
-        ]
-      },
-      {
-        "name": "Matara",
-        "cities": [
-          {
-            "name": "Matara Town",
-            "description": "Historical town with Dutch forts, temples, and vibrant culture.",
-            "url": "https://example.com/matara"
-          },
-          {
-            "name": "Mirissa",
-            "description": "Famous for whale watching, sandy beaches, and a laid-back vibe.",
-            "url": "https://example.com/mirissa"
-          }
-        ]
-      },
-      {
-        "name": "Hambantota",
-        "cities": [
-          {
-            "name": "Hambantota",
-            "description": "Rapidly developing port city near Yala National Park.",
-            "url": "https://example.com/hambantota"
-          },
-          {
-            "name": "Bundala",
-            "description": "A sanctuary for migratory birds and wetland wildlife.",
-            "url": "https://example.com/bundala"
-          }
-        ]
-      },
-      {
-        "name": "Jaffna",
-        "cities": [
-          {
-            "name": "Jaffna City",
-            "description": "A cultural hub with historic Hindu temples and colonial-era forts.",
-            "url": "https://example.com/jaffna"
-          },
-          {
-            "name": "Nallur",
-            "description": "Known for the grand Nallur Kandaswamy Kovil, a center of Tamil Hindu culture.",
-            "url": "https://example.com/nallur"
-          }
-        ]
-      },
-      {
-        "name": "Kilinochchi",
-        "cities": [
-          {
-            "name": "Kilinochchi",
-            "description": "A town recovering post-war with memorials and agriculture.",
-            "url": "https://example.com/kilinochchi"
-          }
-        ]
-      },
-      {
-        "name": "Mannar",
-        "cities": [
-          {
-            "name": "Mannar",
-            "description": "Famous for its dry landscape, baobab trees, and causeway to the mainland.",
-            "url": "https://example.com/mannar"
-          }
-        ]
-      },
-      {
-        "name": "Vavuniya",
-        "cities": [
-          {
-            "name": "Vavuniya",
-            "description": "A gateway to the Northern Province with archaeological significance.",
-            "url": "https://example.com/vavuniya"
-          }
-        ]
-      },
-      {
-        "name": "Mullaitivu",
-        "cities": [
-          {
-            "name": "Mullaitivu",
-            "description": "Coastal town known for serene beaches and war memorial sites.",
-            "url": "https://example.com/mullaitivu"
-          }
-        ]
-      },
-      {
-        "name": "Batticaloa",
-        "cities": [
-          {
-            "name": "Batticaloa",
-            "description": "Known for its lagoon, beaches, and the singing fish folklore.",
-            "url": "https://example.com/batticaloa"
-          }
-        ]
-      },
-      {
         "name": "Ampara",
         "cities": [
           {
             "name": "Arugam Bay",
             "description": "A surfer’s paradise and relaxed beach town with international appeal.",
-            "url": "https://example.com/arugam-bay"
-          }
-        ]
-      },
-      {
-        "name": "Trincomalee",
-        "cities": [
-          {
-            "name": "Trincomalee",
-            "description": "Famous for pristine beaches, Koneswaram Temple, and natural harbor.",
-            "url": "https://example.com/trincomalee"
-          },
-          {
-            "name": "Nilaveli",
-            "description": "A tranquil beach perfect for snorkeling and diving.",
-            "url": "https://example.com/nilaveli"
-          }
-        ]
-      },
-      {
-        "name": "Kurunegala",
-        "cities": [
-          {
-            "name": "Kurunegala",
-            "description": "Historical city with elephant-shaped rocks and ancient ruins.",
-            "url": "https://example.com/kurunegala"
-          }
-        ]
-      },
-      {
-        "name": "Puttalam",
-        "cities": [
-          {
-            "name": "Kalpitiya",
-            "description": "Known for dolphin watching, kite surfing, and sandbars.",
-            "url": "https://example.com/kalpitiya"
+            "url": "https://images.unsplash.com/photo-1552055568-f8c4fb8c6320?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           }
         ]
       },
@@ -252,17 +17,7 @@
           {
             "name": "Anuradhapura",
             "description": "Ancient capital with massive stupas and sacred Bo Tree.",
-            "url": "https://example.com/anuradhapura"
-          }
-        ]
-      },
-      {
-        "name": "Polonnaruwa",
-        "cities": [
-          {
-            "name": "Polonnaruwa",
-            "description": "Second ancient capital with well-preserved ruins and reservoirs.",
-            "url": "https://example.com/polonnaruwa"
+            "url": "https://images.unsplash.com/photo-1621393614326-2f9ed389ce02?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           }
         ]
       },
@@ -272,27 +27,122 @@
           {
             "name": "Badulla",
             "description": "Hill town with scenic waterfalls and tea plantations.",
-            "url": "https://example.com/badulla"
+            "url": "https://images.unsplash.com/photo-1550679193-d8ec2f2c3a25?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           }
         ]
       },
       {
-        "name": "Monaragala",
+        "name": "Batticaloa",
         "cities": [
           {
-            "name": "Ella",
-            "description": "Charming hill town with hikes, tea, and the iconic Nine Arches Bridge.",
-            "url": "https://example.com/ella"
+            "name": "Batticaloa",
+            "description": "Known for its lagoon, beaches, and the singing fish folklore.",
+            "url": "https://plus.unsplash.com/premium_photo-1678131188332-693a503680ae?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           }
         ]
       },
       {
-        "name": "Ratnapura",
+        "name": "Colombo",
         "cities": [
           {
-            "name": "Ratnapura",
-            "description": "City of gems, surrounded by lush forests and waterfalls.",
-            "url": "https://example.com/ratnapura"
+            "name": "Colombo City",
+            "description": "The bustling commercial capital with colonial architecture, seaside promenades, and vibrant nightlife.",
+            "url": "https://plus.unsplash.com/premium_photo-1733259755061-bb37882fc068?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Mount Lavinia",
+            "description": "A beachside suburb known for its golden sands and the iconic Mount Lavinia Hotel.",
+            "url": "https://images.unsplash.com/photo-1743521715435-e724474813b2?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Galle",
+        "cities": [
+          {
+            "name": "Galle Fort",
+            "description": "A UNESCO World Heritage Site with Dutch colonial architecture and seaside views.",
+            "url": "https://images.unsplash.com/photo-1654561773591-57b9413c45c0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Unawatuna",
+            "description": "Popular beach town with snorkeling, coral reefs, and beachside cafes.",
+            "url": "https://images.unsplash.com/photo-1649856092355-eee498b1d0f2?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Gampaha",
+        "cities": [
+          {
+            "name": "Negombo",
+            "description": "A coastal city famous for its lagoon, Dutch canal, and fishing industry.",
+            "url": "https://images.unsplash.com/photo-1581420456035-58b8efadcdea?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Kelaniya",
+            "description": "Known for the historic Kelaniya Raja Maha Vihara Buddhist temple.",
+            "url": "https://images.unsplash.com/photo-1675496004996-d71ce46bb290?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Hambantota",
+        "cities": [
+          {
+            "name": "Hambantota",
+            "description": "Rapidly developing port city near Yala National Park.",
+            "url": "https://images.unsplash.com/photo-1656159625990-8cd23231c218?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Bundala",
+            "description": "A sanctuary for migratory birds and wetland wildlife.",
+            "url": "https://plus.unsplash.com/premium_photo-1686071978237-045211ad85ec?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Jaffna",
+        "cities": [
+          {
+            "name": "Jaffna City",
+            "description": "A cultural hub with historic Hindu temples and colonial-era forts.",
+            "url": "https://images.unsplash.com/photo-1706183677959-9c3fc48a8b35?q=80&w=1175&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Nallur",
+            "description": "Known for the grand Nallur Kandaswamy Kovil, a center of Tamil Hindu culture.",
+            "url": "https://images.unsplash.com/photo-1725773682183-f0c885081ce5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Kalutara",
+        "cities": [
+          {
+            "name": "Kalutara Town",
+            "description": "A quiet coastal town with a beautiful stupa and scenic beach.",
+            "url": "https://images.unsplash.com/photo-1721011793681-abf40cebff04?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Beruwala",
+            "description": "Famous for its beach resorts and the historic Ketchimalai Mosque.",
+            "url": "https://images.unsplash.com/photo-1698937051291-356eaf4ca3f5?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Kandy",
+        "cities": [
+          {
+            "name": "Kandy City",
+            "description": "Cultural capital of Sri Lanka, home to the Temple of the Tooth Relic and scenic Kandy Lake.",
+            "url": "https://images.unsplash.com/photo-1749528744900-320f05d4317a?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Peradeniya",
+            "description": "Renowned for its botanical gardens with diverse flora and royal history.",
+            "url": "hhttps://images.unsplash.com/photo-1727160918058-32db8070aabb?q=80&w=1583&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           }
         ]
       },
@@ -302,7 +152,157 @@
           {
             "name": "Pinnawala",
             "description": "Home to the famous elephant orphanage and lush countryside.",
-            "url": "https://example.com/pinnawala"
+            "url": "https://images.unsplash.com/photo-1623869694958-afca16077078?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Kilinochchi",
+        "cities": [
+          {
+            "name": "Kilinochchi",
+            "description": "A town recovering post-war with memorials and agriculture.",
+            "url": "https://images.unsplash.com/photo-1706103780703-d044f10c30a8?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Kurunegala",
+        "cities": [
+          {
+            "name": "Kurunegala",
+            "description": "Historical city with elephant-shaped rocks and ancient ruins.",
+            "url": "https://images.unsplash.com/photo-1694712282542-1c9929653496?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Mannar",
+        "cities": [
+          {
+            "name": "Mannar",
+            "description": "Famous for its dry landscape, baobab trees, and causeway to the mainland.",
+            "url": "https://images.unsplash.com/photo-1609676002449-fcccf2e90f4f?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Matale",
+        "cities": [
+          {
+            "name": "Matale Town",
+            "description": "Surrounded by spice gardens and ancient temples, including Aluvihare Rock Temple.",
+            "url": "https://images.unsplash.com/photo-1677223625838-efaac01a5efb?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Riverston",
+            "description": "A scenic hill area with cool climates and beautiful hiking trails.",
+            "url": "https://images.unsplash.com/photo-1628393808690-318712461af4?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Matara",
+        "cities": [
+          {
+            "name": "Matara Town",
+            "description": "Historical town with Dutch forts, temples, and vibrant culture.",
+            "url": "https://images.unsplash.com/photo-1607672996533-98ec2fb71625?q=80&w=1167&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Mirissa",
+            "description": "Famous for whale watching, sandy beaches, and a laid-back vibe.",
+            "url": "https://images.unsplash.com/photo-1580910527739-556eb89f9d65?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Moneragala",
+        "cities": [
+          {
+            "name": "Ella",
+            "description": "Charming hill town with hikes, tea, and the iconic Nine Arches Bridge.",
+            "url": "https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Mullaitivu",
+        "cities": [
+          {
+            "name": "Mullaitivu",
+            "description": "Coastal town known for serene beaches and war memorial sites.",
+            "url": "https://images.unsplash.com/photo-1582644669139-c0a19317acd6?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "NuwaraEliya",
+        "cities": [
+          {
+            "name": "Nuwara Eliya",
+            "description": "The 'Little England' of Sri Lanka, known for tea plantations and colonial charm.",
+            "url": "https://images.unsplash.com/photo-1586193804147-64d5c02ef9c1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Horton Plains",
+            "description": "A national park with the iconic World's End cliff and rare wildlife.",
+            "url": "https://images.unsplash.com/photo-1610017810004-a6f3c531df34?q=80&w=1722&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Polonnaruwa",
+        "cities": [
+          {
+            "name": "Polonnaruwa",
+            "description": "Second ancient capital with well-preserved ruins and reservoirs.",
+            "url": "https://images.unsplash.com/photo-1709729519591-2fb2d25395df?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Puttalam",
+        "cities": [
+          {
+            "name": "Kalpitiya",
+            "description": "Known for dolphin watching, kite surfing, and sandbars.",
+            "url": "https://images.unsplash.com/photo-1563297919-2997f933609c?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Ratnapura",
+        "cities": [
+          {
+            "name": "Ratnapura",
+            "description": "City of gems, surrounded by lush forests and waterfalls.",
+            "url": "https://images.unsplash.com/photo-1551947391-249dcb8ed976?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Trincomalee",
+        "cities": [
+          {
+            "name": "Trincomalee",
+            "description": "Famous for pristine beaches, Koneswaram Temple, and natural harbor.",
+            "url": "https://images.unsplash.com/photo-1558446791-ac5fec3caddf?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          },
+          {
+            "name": "Nilaveli",
+            "description": "A tranquil beach perfect for snorkeling and diving.",
+            "url": "https://images.unsplash.com/photo-1695090177375-0351b2314e3a?q=80&w=1151&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        ]
+      },
+      {
+        "name": "Vavuniya",
+        "cities": [
+          {
+            "name": "Vavuniya",
+            "description": "A gateway to the Northern Province with archaeological significance.",
+            "url": "https://images.unsplash.com/photo-1682177612238-45c661997aee?q=80&w=1970&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           }
         ]
       }
