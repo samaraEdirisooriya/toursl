@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:toursl/blocks/bloc/map_bloc.dart';
+import 'package:toursl/blocks/bloc/map_event.dart';
+import 'package:toursl/blocks/bloc/map_state.dart';
 import 'package:toursl/ui/layouts/mapui.dart';
 import 'package:toursl/ui/widgets/bground_img.dart';
 import 'package:toursl/ui/widgets/heddingtext.dart';
@@ -13,24 +17,31 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+@override
+void initState() {
+  super.initState();
+  context.read<MapBloc>().add(LoadGeoJsonEvent());
+}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: Stack(
         alignment: Alignment.topLeft,
         children: [
           BgroundImg(),
-         
+
           SingleChildScrollView(
-            
             child: Stack(
               children: [
                 SizedBox(
                   width: MediaQuery.of(context).size.width,
-                  
+
                   height: 500,
-                  child: SelectedDistrictWidget()),
+                  child: Positioned(
+                    top: 20,
+                    right: 20,
+                    child: SelectedDistrictWidget()),
+                ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,11 +54,18 @@ class _HomeState extends State<Home> {
                       padding: const EdgeInsets.only(left: 10.0),
                       child: Container(
                         width: 200,
-                        height:400,
+                        height: 400,
                         child: const SriLankaDistrictMap(),
                       ),
                     ),
-                    HomeList()
+                    BlocBuilder<MapBloc, MapState>(
+                      builder: (context, state) {
+                        return Text(
+                          "Selected: ${state.selectedDistrict ?? 'None'}",
+                        );
+                      },
+                    ),
+                    HomeList(),
                   ],
                 ),
               ],

@@ -12,13 +12,13 @@ class SriLankaDistrictMap extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (_) => MapBloc()..add(LoadGeoJsonEvent()),
-      child: const MapView(),
+    return BlocBuilder<MapBloc, MapState>(
+      builder: (context, state) {
+        return const MapView();
+      },
     );
   }
 }
-
 class MapView extends StatelessWidget {
   const MapView({super.key});
 
@@ -63,19 +63,7 @@ class MapView extends StatelessWidget {
                   
                   PolygonLayer(polygons: allPolygons)],
               ),
-              if (state.selectedDistrict != null)
-                Positioned(
-                  bottom: 20,
-                  left: 20,
-                  child: Container(
-                    padding: const EdgeInsets.all(8),
-                    color: Colors.black87,
-                    child: Text(
-                      "Selected: ${state.selectedDistrict}",
-                      style: const TextStyle(color: Colors.white),
-                    ),
-                  ),
-                ),
+              
             ],
           );
         },

@@ -11,21 +11,7 @@ class SelectedDistrictWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        BlocBuilder<MapBloc, MapState>(
-        builder: (context, state) {
-          if (state.selectedDistrict == null || state.districtCities.isEmpty) {
-            return const Center(child: Text("No district selected."));
-          }
-
-          return Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: SelectedDistrictCard(
-              districtName: state.selectedDistrict!,
-              cities: state.districtCities,
-            ),
-          );
-        },
-      ),
+        
         Positioned(
             top: 60,
             left: 120,
@@ -42,6 +28,37 @@ class SelectedDistrictWidget extends StatelessWidget {
               ),
             ),
           ),
+          BlocBuilder<MapBloc, MapState>(
+        builder: (context, state) {
+          if (state.selectedDistrict == null || state.districtCities.isEmpty) {
+            return const Center(child: Text("No district selected."));
+          }
+
+          return Stack(
+            children: [
+              Positioned(
+                top: 250,
+                right: 80,
+                child: SelectedDistrictCard(
+                  districtName: state.selectedDistrict!,
+                  cities: state.districtCities,
+                ),
+              ),
+              Positioned(
+                top: 210,
+                right: 150,
+                child: Text(
+                  state.selectedDistrict!,
+                  style: const TextStyle(
+                    fontSize: 24,
+                    color: Color.fromARGB(255, 0, 0, 0),
+                    fontWeight: FontWeight.bold,
+                ),
+              )),
+            ],
+          );
+        },
+      ),
       ],
     );
   }

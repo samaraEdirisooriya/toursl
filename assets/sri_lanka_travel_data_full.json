@@ -7,12 +7,12 @@
           {
             "name": "Colombo City",
             "description": "The bustling commercial capital with colonial architecture, seaside promenades, and vibrant nightlife.",
-            "url": "https://example.com/colombo"
+            "url": "https://en.wikipedia.org/wiki/Colombo#/media/File:Colombo_skyline_2024.jpg"
           },
           {
             "name": "Mount Lavinia",
             "description": "A beachside suburb known for its golden sands and the iconic Mount Lavinia Hotel.",
-            "url": "https://example.com/mount-lavinia"
+            "url": "https://en.wikipedia.org/wiki/Mount_Lavinia#/media/File:Beauty_of_the_kandy.jpg"
           }
         ]
       },
@@ -52,12 +52,12 @@
           {
             "name": "Kandy City",
             "description": "Cultural capital of Sri Lanka, home to the Temple of the Tooth Relic and scenic Kandy Lake.",
-            "url": "https://example.com/kandy"
+            "url": "https://en.wikipedia.org/wiki/Kandy#/media/File:SL_Kandy_asv2020-01_img04_Queens_Hotel.jpg"
           },
           {
             "name": "Peradeniya",
             "description": "Renowned for its botanical gardens with diverse flora and royal history.",
-            "url": "https://example.com/peradeniya"
+            "url": "https://en.wikipedia.org/wiki/Peradeniya#/media/File:Botanical_Garden_of_Peradeniya_01.jpg"
           }
         ]
       },
@@ -67,12 +67,12 @@
           {
             "name": "Matale Town",
             "description": "Surrounded by spice gardens and ancient temples, including Aluvihare Rock Temple.",
-            "url": "https://example.com/matale"
+            "url": "https://en.wikipedia.org/wiki/Matale#/media/File:Matale_city_skyline.jpg"
           },
           {
             "name": "Riverston",
             "description": "A scenic hill area with cool climates and beautiful hiking trails.",
-            "url": "https://example.com/riverston"
+            "url": "https://en.wikipedia.org/wiki/Matale#/media/File:Matale_city_skyline.jpg"
           }
         ]
       },
