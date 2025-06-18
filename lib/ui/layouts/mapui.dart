@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
-import 'package:toursl/blocks/bloc/map_bloc.dart';
-import 'package:toursl/blocks/bloc/map_event.dart';
-import 'package:toursl/blocks/bloc/map_state.dart';
+import 'package:toursl/blocks/map/map_bloc.dart';
+import 'package:toursl/blocks/map/map_event.dart';
+import 'package:toursl/blocks/map/map_state.dart';
 import 'package:toursl/ui/colors/colors.dart';
 
 class SriLankaDistrictMap extends StatelessWidget {

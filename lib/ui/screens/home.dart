@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:toursl/blocks/bloc/map_bloc.dart';
-import 'package:toursl/blocks/bloc/map_event.dart';
-import 'package:toursl/blocks/bloc/map_state.dart';
+import 'package:toursl/blocks/map/map_bloc.dart';
+import 'package:toursl/blocks/map/map_event.dart';
+import 'package:toursl/blocks/map/map_state.dart';
 import 'package:toursl/ui/layouts/mapui.dart';
 import 'package:toursl/ui/widgets/bground_img.dart';
 import 'package:toursl/ui/widgets/heddingtext.dart';

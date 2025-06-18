@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:toursl/blocks/bloc/onboarding/onboarding_bloc.dart';
 import 'package:toursl/models/onboarddata.dart';
 import 'package:toursl/ui/screens/home.dart';
 import 'package:toursl/ui/widgets/onboardpage.dart';
@@ -39,6 +41,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           duration: const Duration(milliseconds: 300),
           curve: Curves.easeInOut);
     } else {
+       context.read<OnboardingBloc>().add(CompleteOnboarding());
       Navigator.push(
                     context,
                     MaterialPageRoute(

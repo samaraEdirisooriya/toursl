@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:toursl/blocks/bloc/map_bloc.dart';
-import 'package:toursl/blocks/bloc/map_event.dart';
+import 'package:toursl/blocks/bloc/onboarding/onboarding_bloc.dart';
+import 'package:toursl/blocks/map/map_bloc.dart';
+import 'package:toursl/blocks/map/map_event.dart';
 import 'package:toursl/ui/screens/home.dart';
 import 'package:toursl/ui/screens/onboardingscreen.dart';
 
@@ -12,12 +13,30 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => MapBloc(),
-      child: MaterialApp(home: const OnboardingScreen()),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<MapBloc>(create: (context) => MapBloc()),
+        BlocProvider<OnboardingBloc>(
+          create: (context) => OnboardingBloc()..add(CheckOnboardingStatus()),
+        ),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: BlocBuilder<OnboardingBloc, OnboardingState>(
+          builder: (context, state) {
+            if (state is ShowOnboarding) {
+              return const OnboardingScreen();
+            } else if (state is OnboardingCompleted) {
+              return const Home();
+            }
+            return const Scaffold(
+              body: Center(child: CircularProgressIndicator()),
+            );
+          },
+        ),
+      ),
     );
   }
 }

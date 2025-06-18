@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:toursl/blocks/bloc/map_bloc.dart';
-import 'package:toursl/blocks/bloc/map_state.dart';
+import 'package:toursl/blocks/map/map_bloc.dart';
+import 'package:toursl/blocks/map/map_state.dart';
 import 'package:toursl/ui/layouts/selected_district_card.dart';
 
 class SelectedDistrictWidget extends StatelessWidget {
