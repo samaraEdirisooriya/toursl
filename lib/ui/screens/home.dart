@@ -33,14 +33,15 @@ void initState() {
           SingleChildScrollView(
             child: Stack(
               children: [
-                SizedBox(
+                Container(
+
                   width: MediaQuery.of(context).size.width,
 
                   height: 500,
-                  child: Positioned(
-                    top: 20,
-                    right: 20,
-                    child: SelectedDistrictWidget()),
+                  child:  Padding(
+                      padding: const EdgeInsets.only(top: 20),
+                      child: SelectedDistrictWidget(),
+                    )
                 ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
