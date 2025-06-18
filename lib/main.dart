@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:toursl/blocks/bloc/map_bloc.dart';
 import 'package:toursl/blocks/bloc/map_event.dart';
 import 'package:toursl/ui/screens/home.dart';
+import 'package:toursl/ui/screens/onboardingscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => MapBloc(),
-      child: MaterialApp(home: const Home()),
+      child: MaterialApp(home: const OnboardingScreen()),
     );
   }
 }
