@@ -1,16 +1,43 @@
-# toursl
+# 🇱🇰 TourSL - Flutter Tourism Guide for Sri Lanka
 
-A new Flutter project.
+A beautiful and modern Flutter mobile app that helps users explore tourist destinations across Sri Lanka. Features an onboarding flow, interactive district map using GeoJSON, and detailed pages for tourist cities with images and descriptions.
 
-## Getting Started
+![TourSL Demo](assets/screenshots/demo.gif)
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 🧭 Onboarding screens shown only once using SharedPreferences
+- 🗺️ District selection with interactive GeoJSON-based map (`flutter_map`)
+- 🏙️ City cards with images and descriptions
+- 🔍 Navigate from district → cities → city detail
+- 🎨 Custom UI with gradient overlays and reusable widgets
+- ⚙️ BLoC-based state management for map and onboarding logic
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📸 Screenshots
+
+| Onboarding | Map View | City List | City Details |
+|-----------|----------|-----------|--------------|
+| ![1](assets/screenshots/onboarding.png) | ![2](assets/screenshots/map.png) | ![3](assets/screenshots/citylist.png) | ![4](assets/screenshots/detail.png) |
+
+---
+
+## 📦 Tech Stack
+
+- **Flutter**
+- `flutter_bloc` – BLoC state management
+- `flutter_map` – Render district polygons
+- `shared_preferences` – Store onboarding status
+- `latlong2` – Geographic utilities
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/your-username/toursl.git
+   cd toursl
