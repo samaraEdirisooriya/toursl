@@ -19,7 +19,7 @@ A beautiful and modern Flutter mobile app that helps users explore tourist desti
 
 ## 📸 Screenshots
 
-| Onboarding | Map View | City List | City Details |
+|  |  |  |  |
 |-----------|----------|-----------|--------------|
 | ![1](assets/screenshots/Screenshot_2025-06-18-16-27-50-566_com.example.toursl.jpg) | ![2](assets/screenshots/2.jpg) | ![3](assets/screenshots/3.jpg) | ![4](assets/screenshots/4.jpg) |
 
